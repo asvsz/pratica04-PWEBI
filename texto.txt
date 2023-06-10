@@ -1,8 +1,0 @@
-@app.route('/editar-topik/<int:id>', methods=['PUT'])
-def editar_topik(id):
-  
-
-   <label for="horario">Horario: </label>
-  <input type="text" name="horario" id="horario" value="{{ topik['horario'] }}" required/>
-  <label for="destino">Destino da Topik: </label>
-  <input type="text" name="destino" id="destino" value="{{ topik['destino'] }}" required/>
