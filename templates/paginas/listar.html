@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Lista de Topiks</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Motorista</th>
+      <th>||</th>
+      <th>Destino</th>
+      <th>||</th>
+      <th>Horário</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for topik in topiks %}
+    <tr>
+      <td>{{ topik.motorista }}</td>
+      <td>||</td>
+      <td>{{ topik.destino }}</td>
+      <td>||</td>
+      <td>{{ topik.horario }}</td>
+      <td>
+        <a href="/editar-topik/{{ loop.index0 }}">Editar</a>
+        <a href="/excluir-topik/{{ loop.index0 }}">Excluir</a>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

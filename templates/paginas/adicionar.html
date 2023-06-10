@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Adicione uma Topik</h1>
+
+<form action="{{url_for('adicionar_topik')}}" method="POST">
+  <label for="motorista">Nome do Motorista: </label>
+  <input type="text" name="motorista" requerid/></br>
+  <label for="destino">Destino da Topik: </label>
+  <input type="text" name="destino" requerid/></br>
+  <label for="horario">Horário: </label>
+  <input type="text" name="horario" requerid/> </br>
+
+  <input type="submit" value="Adicionar">
+</form>
+
+{% endblock %}

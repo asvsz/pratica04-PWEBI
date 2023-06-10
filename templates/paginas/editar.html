@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Edite a Topik</h1>
+
+<form action="/editar-topik/{{ topik['id'] }}" method="POST">
+  <label for="motorista">Nome do Motorista: </label>
+  <input type="text" name="motorista" id="motorista" value="{{ topik['motorista'] }}" required/></br>
+  <label for="destino">Destino da Topik: </label>
+  <input type="text" name="destino" id="destino" value="{{ topik['destino'] }}" required/></br>
+  <label for="horario">Horario: </label>
+  <input type="text" name="horario" id="horario" value="{{ topik['horario'] }}" required/></br>
+
+  <input type="submit" value="Salvar">
+</form>
+{% endblock %}
+
