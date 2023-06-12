@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 topiks = []
 
-
 @app.route('/')
 def index():
   return render_template('paginas/index.html')
